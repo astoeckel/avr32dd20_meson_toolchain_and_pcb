@@ -1,0 +1,58 @@
+[binaries]
+c = '/usr/bin/avr-gcc'
+cpp = '/usr/bin/avr-g++'
+ar = '/usr/bin/avr-ar'
+strip = '/usr/bin/avr-strip'
+
+[constants]
+# Replace this with the actual path to this repository;
+# in the future meson might support some future for specifying relative
+# toolchains. See
+# - https://github.com/mesonbuild/meson/issues/3439
+# - https://github.com/mesonbuild/meson/pull/8968
+# - https://github.com/mesonbuild/meson/pull/9223
+# - https://github.com/mesonbuild/meson/pull/10003
+root = '/home/andreas/Projects/2022_11_avr32dd20_board_and_meson_toolchain'
+
+[built-in options]
+
+c_args = [
+  '-Os',
+  '-I/usr/avr/include',
+  '-I' + root + '/part_definition/include',
+  '-B' + root + '/part_definition/dev/avr32dd20',
+  '-ffunction-sections',
+  '-fdata-sections',
+  '-mmcu=avr32dd20',
+  ]
+
+cpp_args = [
+  '-Os',
+  '-I/usr/avr/include',
+  '-I' + root + '/part_definition/include',
+  '-B' + root + '/part_definition/dev/avr32dd20',
+  '-fno-exceptions',
+  '-fno-rtti',
+  '-ffunction-sections',
+  '-fdata-sections',
+  '-mmcu=avr32dd20',
+  ]
+
+c_link_args = [
+  '-B' + root + '/part_definition/dev/avr32dd20',
+  '-Wl,--gc-sections',
+  '-mmcu=avr32dd20',
+  ]
+
+cpp_link_args = [
+  '-B' + root + '/part_definition/dev/avr32dd20',
+  '-Wl,--gc-sections',
+  '-mmcu=avr32dd20',
+  ]
+
+[host_machine]
+system = 'bare'
+cpu_family = 'avr'
+cpu = 'avr32dd20'
+endian = 'none'
+
