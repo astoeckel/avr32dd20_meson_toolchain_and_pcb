@@ -1,9 +1,11 @@
 # AVR32DD20 Meson Toolchain and Breadboard Adapter PCB
 
 
+> **Note**  
+> While I hope that this repository may turn out useful, please be aware that it was mainly created as a reference for myself.
+
 > **Warning**  
-> While I hope that this repository may turn out helpful for someone else, please be aware that it was mainly created as a reference for myself.
-> Note that I'm not an electrical engineer; please use the PCB design with utmost caution.
+> I'm not an electrical engineer; please use the PCB design with utmost caution.
 
 
 **[Meson-based](https://mesonbuild.com/) toolchain for the [Microchip AVR32DD20 MCU](https://www.microchip.com/en-us/product/AVR32DD20
