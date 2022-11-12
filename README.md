@@ -1,39 +1,44 @@
 # AVR32DD20 Meson Toolchain and Breadboard Adapter PCB
 
+
+> **Warning**  
+> While I hope that this repository may turn out helpful for someone else, please be aware that it was mainly created as a reference for myself
+
+
 **[Meson-based](https://mesonbuild.com/) toolchain for the [Microchip AVR32DD20 MCU](https://www.microchip.com/en-us/product/AVR32DD20
 ) along with a simple breadboard adapter PCB.**
 
+
 At the time of creating this repository, information on how to use the newer AVR µCs (DA, DB, DD, series) with open-source toolchains has been rather spotty.
 This repository has been created to provide a simple example showing how to compile code for these new µCs (specifically, the AVR32DD20) using the meson build system.
-
-> **Warning**  
-> This repository is mainly meant as a reference for myself; as such, it may not turn out to be very useful to you.
-
 <div align="center">
 <img src="board/board.jpg" width="500" alt="A raytraced image of the adapter PCB exported from KiCAD" />
 </div>
+
 
 ## Meson Toolchain
 
 ### Compile the test program
 
 To compile the test program (see  [`src/main.c`](src/main.c)), follow the following steps.
-1. Install `avrdude` and the `avr-gcc` toolchain, as well as `meson` build and `ninja`. On Fedora Linux, simply run
-```sh
-sudo dnf install avrdude avr-gcc avr-gcc-c++ avr-binutils ninja meson
-```
-1. Clone this repository
-```sh
-git clone https://github.com/astoeckel/avr32dd20_meson_toolchain_and_pcb
-cd avr32dd20_meson_toolchain_and_pcb
-```
-1. Edit the `path` constant in `avr-unknown-gcc.txt` to point at your copy of the Git repository. Right now, `meson` does not support relative paths in the toolchain definition, so the absolute path has to be inserted by hand.
-1. Create a build directory and compile:
-```sh
-mkdir build; cd build
-meson setup --cross-file=../avr-unknown-gcc.txt ..
-ninja
-```
+1. **Install `avrdude` and the `avr-gcc` toolchain, as well as `meson` build and `ninja`.**  
+   On Fedora Linux, simply run
+   ```sh
+   sudo dnf install avrdude avr-gcc avr-gcc-c++ avr-binutils ninja meson
+   ```
+1. **Clone this repository**
+   ```sh
+    git clone https://github.com/astoeckel/avr32dd20_meson_toolchain_and_pcb
+    cd avr32dd20_meson_toolchain_and_pcb
+   ```
+1. **Edit the `path` constant in `avr-unknown-gcc.txt`**  
+   This constant should point at your copy of the Git repository. Right now, `meson` does not support relative paths in the toolchain definition, so the absolute path has to be inserted by hand.
+3. **Create a build directory and compile**  
+   ```sh
+   mkdir build; cd build
+   meson setup --cross-file=../avr-unknown-gcc.txt ..
+   ninja
+   ```
 
 ### Flash the test program
 
