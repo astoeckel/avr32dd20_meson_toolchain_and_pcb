@@ -1,14 +1,17 @@
 # AVR32DD20 Meson Toolchain and Breadboard Adapter PCB
 
-[Meson-based](https://mesonbuild.com/) toolchain for the [Microchip AVR32DD20 MCU](https://www.microchip.com/en-us/product/AVR32DD20
-) along with a simple breadboard adapter PCB.
+**[Meson-based](https://mesonbuild.com/) toolchain for the [Microchip AVR32DD20 MCU](https://www.microchip.com/en-us/product/AVR32DD20
+) along with a simple breadboard adapter PCB.**
+
+At the time of creating this repository, information on how to use the newer AVR µCs (DA, DB, DD, series) with open-source toolchains has been rather spotty.
+This repository has been created to provide a simple example showing how to compile code for these new µCs (specifically, the AVR32DD20) using the meson build system.
+
+> **Warning**  
+> This repository is mainly meant as a reference for myself; as such, it may not turn out to be very useful to you.
 
 <div align="center">
 <img src="board/board.jpg" width="500" alt="A raytraced image of the adapter PCB exported from KiCAD" />
 </div>
-
-> **Warning**  
-> This repository is mainly meant as a reference for myself; as such, it may not turn out to be very useful to you.
 
 ## Meson Toolchain
 
@@ -59,7 +62,7 @@ All KiCAD project files are located in the [board](board/kicad) folder; you can 
 This repository contains code from various thrid-parties:
 
 * `avrdude.conf`  
-  This file has been adapted from the `jtag2updi` project (see https://github.com/ElTangas/jtag2updi); the file was extended to include the `avr32dd20`.
+  This file has been adapted from the `jtag2updi` project (see https://github.com/ElTangas/jtag2updi); the file was extended to include the `avr32dd20` part.
 * `part_definition`  
   These files have been copied from the Microchip AVR-Dx Series Device Support pack. See https://packs.download.microchip.com/ for more information.
 * `avr-unknown-gcc.txt`  
