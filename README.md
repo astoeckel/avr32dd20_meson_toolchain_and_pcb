@@ -54,7 +54,9 @@ All KiCAD project files are located in the [board](board/kicad) folder; you can 
 
 # License information
 
-This repository contains code from various sources:
+### Third-party sources
+
+This repository contains code from various thrid-parties:
 
 * `avrdude.conf`  
   This file has been adapted from the `jtag2updi` project (see https://github.com/ElTangas/jtag2updi); the file was extended to include the `avr32dd20`.
