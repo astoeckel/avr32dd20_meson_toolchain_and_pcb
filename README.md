@@ -61,9 +61,9 @@ All KiCAD project files are located in the [board](board/kicad) folder; you can 
 * **UPDI programming header**  
   The PCB includes a standard 6-pin UPDI programming header. Note that no extra resistors or diodes are included; this board assumes that you have a proper UPDI programmer that includes all required circuitry.
 * **Bypass capacitors**  
-  There is some space on the PCB to place 10n and 100n bypass capacitors onto the VCC and VIO lines.
+  There is some space on the PCB to for 10n and 100n bypass capacitors attached to the VCC and VIO lines.
 * **Quarz crystal**  
-  There is some space for a quartz-crystal on the back-side, along with the corresponding capacitors.
+  There is some space for a quartz-crystal on the back side, along with the corresponding capacitors.
 
 # License information
 
