@@ -8,7 +8,7 @@
 > I'm not an electrical engineer; please use the PCB design with utmost caution.
 
 
-**[Meson-based](https://mesonbuild.com/) toolchain for the [Microchip AVR32DD20 MCU](https://www.microchip.com/en-us/product/AVR32DD20
+**[Meson](https://mesonbuild.com/)-based toolchain for the [Microchip AVR32DD20 µC](https://www.microchip.com/en-us/product/AVR32DD20
 ) along with a simple breadboard adapter PCB.**
 
 
