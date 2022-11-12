@@ -1,5 +1,7 @@
 # AVR32DD20 Meson Toolchain and Breadboard Adapter PCB
 
+**[Meson](https://mesonbuild.com/)-based toolchain for the [Microchip AVR32DD20 µC](https://www.microchip.com/en-us/product/AVR32DD20
+) along with a simple breadboard adapter PCB.**
 
 > **Note**  
 > While I hope that this repository may turn out useful, please be aware that it was mainly created as a reference for myself.
@@ -8,12 +10,8 @@
 > I'm not an electrical engineer; please use the PCB design with utmost caution.
 
 
-**[Meson](https://mesonbuild.com/)-based toolchain for the [Microchip AVR32DD20 µC](https://www.microchip.com/en-us/product/AVR32DD20
-) along with a simple breadboard adapter PCB.**
-
-
-At the time of creating this repository, information on how to use the newer AVR µCs (DA, DB, DD, series) with open-source toolchains has been rather spotty.
-This repository has been created to provide a simple example showing how to compile code for these new µCs (specifically, the AVR32DD20) using the meson build system.
+At the time of creating this repository, information on how to use the newer AVR µCs (DA, DB, DD, series) with fully open-source toolchains was rather spotty.
+This repository has hence been created to provide a simple example that demonstrates how to compile code for these new µCs (specifically, the AVR32DD20) with the meson build system.
 <div align="center">
 <img src="board/board.jpg" width="500" alt="A raytraced image of the adapter PCB exported from KiCAD" />
 </div>
