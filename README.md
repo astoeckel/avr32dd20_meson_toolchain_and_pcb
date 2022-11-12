@@ -2,7 +2,8 @@
 
 
 > **Warning**  
-> While I hope that this repository may turn out helpful for someone else, please be aware that it was mainly created as a reference for myself
+> While I hope that this repository may turn out helpful for someone else, please be aware that it was mainly created as a reference for myself.
+> Note that I'm not an electrical engineer; please use the PCB design with utmost caution.
 
 
 **[Meson-based](https://mesonbuild.com/) toolchain for the [Microchip AVR32DD20 MCU](https://www.microchip.com/en-us/product/AVR32DD20
@@ -59,6 +60,8 @@ All KiCAD project files are located in the [board](board/kicad) folder; you can 
   The PCB includes a standard 6-pin UPDI programming header. Note that no extra resistors or diodes are included; this board assumes that you have a proper UPDI programmer that includes all required circuitry.
 * **Bypass capacitors**  
   There is some space on the PCB to place 10n and 100n bypass capacitors onto the VCC and VIO lines.
+* **Quarz crystal**  
+  There is some space for a quartz-crystal on the back-side, along with the corresponding capacitors.
 
 # License information
 
