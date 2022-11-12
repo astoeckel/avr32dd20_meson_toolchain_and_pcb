@@ -52,7 +52,7 @@ Edit [`meson.build`](meson.build) to change the programmer parameters.
 ## PCB
 
 The PCB is a simple adapter for putting AVR32DD20 in the SOIC20 onto a breadboard.
-All KiCAD project files are located in the [board](board/kicad) folder; you can find the final Gerber files in the [gerber](board/gerber) folder.
+All KiCAD project files are located in the [board](board/kicad) folder; you can find the final Gerber files for production with [JLCPCB](https://jlcpcb.com/) in the [gerber](board/gerber) folder.
 
 ### Features
 
