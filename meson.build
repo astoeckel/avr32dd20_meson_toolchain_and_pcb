@@ -42,7 +42,7 @@ hex_main_avr32dd20 = custom_target(
     output: 'main_avr32dd20.hex',
     command: [
         exe_avr_objcopy,
-        '-j', '.text', '-j', '.data', '-O', 'ihex',
+        '-j', '.text', '-j', '.data', '-j', '.rodata', '-O', 'ihex',
         '@INPUT@', '@OUTPUT@',
     ],
 )
